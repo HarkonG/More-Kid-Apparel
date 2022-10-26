@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="ChildApparelMakeableBase">
+        <defName>Apparel_KidBodyStrap</defName>
+        <label>kid slave body strap</label>
+        <description>A small, uncomfortable arrangement of straps around the torso made for kid slaves. It reminds the wearer of their slave status and psychologically suppresses them, reducing the chance of a slave rebellion.</description>
+        <graphicData>
+            <texPath>KidBodyStrap/KidBodyStrap_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.7, 0.7)</drawSize>
+        </graphicData>
+        <costStuffCount>35</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>       
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToMake>3500</WorkToMake>
+            <Mass>0.2</Mass>
+            <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.4</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset>0.15</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <apparel>
+            <tags Inherit ="False">
+            </tags>
+            <slaveApparel>true</slaveApparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <wornGraphicPath>KidBodyStrap/KidBodyStrap</wornGraphicPath>
+            <layers Inherit ="False">
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Slave</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+            <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <recipeMaker>
+            <displayPriority>260</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="ChildApparelMakeableBase">
+        <defName>Apparel_KidCollar</defName>
+        <label>kid slave collar</label>
+        <description>A small, uncomfortable collar made for kid slaves. It reminds the wearer of their slave status and psychologically suppresses them, reducing the chance of a slave rebellion.</description>
+        <graphicData>
+            <texPath>KidSlaveCollar/KidSlaveCollar_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.7, 0.7)</drawSize>
+        </graphicData>
+        <costStuffCount>12</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>40</MaxHitPoints>
+            <WorkToMake>900</WorkToMake>
+            <Mass>0.05</Mass>
+            <StuffEffectMultiplierArmor>0.0</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.00</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.1</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset>0.15</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <apparel>
+            <tags Inherit ="False">
+            </tags>
+            <slaveApparel>true</slaveApparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Neck</li>
+            </bodyPartGroups>
+            <wornGraphicPath>KidSlaveCollar/KidSlaveCollar</wornGraphicPath>
+            <layers Inherit ="False">
+                <li>Overhead</li>
+            </layers>
+            <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+            <hatRenderedAboveBody>true</hatRenderedAboveBody>
+            <hatRenderedBehindHead>true</hatRenderedBehindHead>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+            <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+            <defaultOutfitTags>
+                <li>Slave</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <recipeMaker>
+            <displayPriority>175</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+
+</Defs>
